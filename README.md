@@ -20,3 +20,6 @@ Features:
 | PUT         | Update          | Update a resource or change his status |
 | DELETE      | Delete          | Delete a resource                      |
 
+## The first REST service
+
+- [http://localhost/rest-api-php/book/read.php](http://localhost/rest-api-php/book/read.php)

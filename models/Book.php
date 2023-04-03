@@ -10,13 +10,13 @@ class Book {
     private $table_name = "books";
     
     // book's properties
-    public $isbn;
-    public $author;
-    public $title;
+    public $ISBN;
+    public $Author;
+    public $Title;
     
     public function __construct($db)
     {
-        $this->conn = $$db;
+        $this->conn = $db;
     }
     
     function read()
