@@ -23,3 +23,14 @@ Features:
 ## The first REST service
 
 - [http://localhost/rest-api-php/book/read.php](http://localhost/rest-api-php/book/read.php)
+
+## API: Create
+
+```json
+{
+    "ISBN"   : "00000020dd02",
+    "Author" : "Murakami Haruki",
+    "Title"  : "Kafka sulla spiaggia"
+}
+```
+
