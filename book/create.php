@@ -41,8 +41,9 @@ if(
 else
 {
     http_response_code(400);
-    echo json_encode(array("message" => "Impossibile creare il libro, i dati sono incompleti",
-    "isbn" => $data['ISBN'],
-    "author" => $data['Author'],
-    "title" => $data['Title']));
+    echo json_encode(array("message" => "Impossibile creare il libro,"
+        . " i dati sono incompleti",
+        "isbn" => $data['ISBN'],
+        "author" => $data['Author'],
+        "title" => $data['Title']));
 }
