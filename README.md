@@ -34,3 +34,10 @@ Features:
 }
 ```
 
+## API: Delete
+
+```json
+{
+    "ISBN" : "00000020dd02"
+}
+```

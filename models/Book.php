@@ -86,6 +86,23 @@ class Book {
         return false;
     }
     
+    function delete() {
+        $query = "DELETE FROM " .$this->table_name
+                . " WHERE ISBN = ?";
+        
+        $stmt = $this->conn->prepare($query);
+        
+        $this->ISBN = htmlspecialchars(strip_tags($this->ISBN));
+        
+        $stmt->bindParam(1, $this->ISBN);
+        
+        if($stmt->execute()) {
+            return true;
+        }
+        
+        return false;
+    }
+    
     function view_parameters() {
         $msg = 'ISBN: ' . $this->ISBN;
         $msg .= ' Author: ' . $this->Author;
